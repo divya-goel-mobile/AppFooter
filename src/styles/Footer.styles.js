@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const FooterContainer = styled.nav`
   padding: 80px 60px;
   justify-content: center;
-  margin-top: 100vh;
+  margin-top: 10vh;
   align-items: center;
+  background-color:#1f1f1f;
+  margin-left: 100px;
+  margin-right: 100px;
   @media (max-width: 100%) {
     padding: 70px 30px;
   }
@@ -25,17 +28,17 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;
 
 export const Link = styled.a`
-  color: gray;
+  color: #b4b4b4;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   &:hover {
     color: #ff9c00;
@@ -45,9 +48,8 @@ export const Link = styled.a`
 
 export const Title = styled.p`
   font-size: 24px;
-  color: gray;
+  color: white;
   margin-bottom: 40px;
-  font-weight: bold;
 `;
 export const WrapperTop = styled.div`
   display: flex;
@@ -83,4 +85,21 @@ export const SubscribeButton = styled.button`
   height: 35px;
   background: lightBlue;
   border-color: blue;
+`;
+export const WrapperBottom = styled.div`
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  flex-direction:row;
+  display: flex;
+  padding: 20px
+`;
+export const SocialMediaButton = styled.img`
+  height: 40px;
+ width: 40px;
+ padding: 10px
 `;
