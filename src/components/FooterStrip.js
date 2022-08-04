@@ -1,0 +1,51 @@
+import React, { useState } from "react";
+import style from "../styles/FooterStrip.module.css";
+import iconsFam from "../assets/icons_fam.svg";
+
+export default function FooterStrip() {
+  let [isOpen, setOpen] = useState(true);
+  return (
+    <div
+      style={{ display: isOpen ? "block" : "none" }}
+      className={style.container}
+    >
+      <div className={style.container1}>
+        <div>
+          <div
+            style={{ background: `url(${iconsFam}) no-repeat 0 -1410px` }}
+          ></div>
+        </div>
+        <div className={style.txtFooter}>
+          <p>Best health plan for you and your family.</p>
+          <span>
+            Starting from <span className={style.fontBig}>₹ 200/month</span>
+          </span>
+        </div>
+        <div class="quotesButton hideThanks">
+          <a
+            className={style.footerBtn}
+            href="/products"
+            data-utm-campaign="sticky_form"
+            data-source="Sticky"
+            data-pagename="health-insurance-india"
+          >
+            View Plans
+          </a>
+        </div>
+      </div>
+      <div
+        onClick={() => {
+          debugger;
+          setOpen(false);
+        }}
+        className={style.closePopup}
+      >
+        <div>x</div>
+      </div>
+      {/* <p class="tc">
+        *All savings provided by insurers as per IRDAI approved insurance plan.
+        Standard T&amp;C apply.
+      </p> */}
+    </div>
+  );
+}

@@ -1,0 +1,90 @@
+.container {
+    position: fixed;
+    background:#ed1b2e;
+    height: auto;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.container1{
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.txtFooter {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.txtFooter p{
+        line-height: 30px;
+        width: 350px;
+        letter-spacing: 0;
+        margin: 0;
+}
+
+/* .iconsFam {
+background: url(../../cdn/images/bu/health/icons_fam.svg) no-repeat 0 -1410px;
+} */
+
+.fontBig {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container1 a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container1 a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footerBtn {
+    width: 158px;
+    height: 43px;
+    border-radius: 4px;
+    border: solid 1.5px #fff;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0065ff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closePopup{
+    position: absolute;
+    right: 40px;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    font-weight: 900px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.closePopup div{
+    position: absolute;
+    top: -4px;
+}
+

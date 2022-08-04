@@ -13,12 +13,14 @@ import {
   SubscribeButton,
   EmailWrapper,
   WrapperBottom,
-  SocialMediaButton
+  SocialMediaButton,
 } from "../styles/Footer.styles";
 import LogoImg from "../assets/logo.png";
-import FacebookImg from "../assets/facebook.png"
-import InstagramImg from "../assets/instagram.png"
-import YouTubeImg from "../assets/youtube.png"
+import FacebookImg from "../assets/facebook.png";
+import InstagramImg from "../assets/instagram.png";
+import YouTubeImg from "../assets/youtube.png";
+import FooterStrip from "./FooterStrip";
+import "../styles/main.css";
 
 function Footer() {
   return (
@@ -67,7 +69,7 @@ function Footer() {
             </Column>
             <Column>
               <Title>Priority Programme</Title>
-              <Link href="#">Ascend by  Prudential</Link>
+              <Link href="#">Ascend by Prudential</Link>
               <Link href="#">OPUS by Prudential</Link>
               <Link href="#">Pursue</Link>
             </Column>
@@ -79,22 +81,25 @@ function Footer() {
               <Link href="#">Prudential corporation Office</Link>
             </Column>
           </Row>
-
         </Wrapper>
-
       </FooterContainer>
       <WrapperBottom>
         <div>
-          <p style={{ color: "white", fontSize: 11 }}>VHIS Provider Registration No: 00026 (effective from 28 February 2019)</p>
-          <p style={{ color: "white", fontSize: 11 }}>© Copyright 2022 Prudential Singapore. All rights reserved.</p>
+          <p style={{ color: "white", fontSize: 11 }}>
+            VHIS Provider Registration No: 00026 (effective from 28 February
+            2019)
+          </p>
+          <p style={{ color: "white", fontSize: 11 }}>
+            © Copyright 2022 Prudential Singapore. All rights reserved.
+          </p>
         </div>
-        <div >
+        <div>
           <SocialMediaButton src={FacebookImg}></SocialMediaButton>
           <SocialMediaButton src={InstagramImg}></SocialMediaButton>
           <SocialMediaButton src={YouTubeImg}></SocialMediaButton>
-
         </div>
       </WrapperBottom>
+      <FooterStrip></FooterStrip>
     </>
   );
 }
