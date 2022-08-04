@@ -9,7 +9,7 @@
 }
 
 .container1{
-    max-width: 740px;
+    max-width: 550px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -26,7 +26,6 @@
 }
 .txtFooter p{
         line-height: 30px;
-        width: 350px;
         letter-spacing: 0;
         margin: 0;
 }
@@ -53,14 +52,13 @@ background: url(../../cdn/images/bu/health/icons_fam.svg) no-repeat 0 -1410px;
 }
 
 .footerBtn {
-    width: 158px;
-    height: 43px;
+    padding: 10px 10px;
+    margin-top: 5px;
     border-radius: 4px;
     border: solid 1.5px #fff;
     background-color: #fff;
     font-size: 14px;
-    font-weight: 500;
-    color: #0065ff;
+    font-weight: 600;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -75,10 +73,10 @@ background: url(../../cdn/images/bu/health/icons_fam.svg) no-repeat 0 -1410px;
     justify-content: center;
     align-items: center;
     background-color: white;
-    font-size: 24px;
-    height: 30px;
-    width: 30px;
-    font-weight: 900px;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    font-weight: 600px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -88,3 +86,20 @@ background: url(../../cdn/images/bu/health/icons_fam.svg) no-repeat 0 -1410px;
     top: -4px;
 }
 
+
+@media  screen and (max-width:550px) {
+
+    .container1 {
+        flex-direction: column;
+    }
+    .fontBig {
+        font-size: 20px
+    }
+    .txtFooter {
+        font-size: 14px;
+    }
+    .footerBtn {
+        padding: 5px 10px;
+    }
+
+}
