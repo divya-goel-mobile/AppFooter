@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "../styles/FooterStrip.module.css";
-import iconsFam from "../assets/icons_fam.svg";
 
 export default function FooterStrip() {
   let [isOpen, setOpen] = useState(true);
@@ -10,11 +9,6 @@ export default function FooterStrip() {
       className={style.container}
     >
       <div className={style.container1}>
-        <div>
-          <div
-            style={{ background: `url(${iconsFam}) no-repeat 0 -1410px` }}
-          ></div>
-        </div>
         <div className={style.txtFooter}>
           <p>Best health plan for you and your family.</p>
           <span>
@@ -35,7 +29,6 @@ export default function FooterStrip() {
       </div>
       <div
         onClick={() => {
-          debugger;
           setOpen(false);
         }}
         className={style.closePopup}
