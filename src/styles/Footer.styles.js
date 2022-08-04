@@ -11,6 +11,10 @@ export const FooterContainer = styled.nav`
   @media (max-width: 100%) {
     padding: 70px 30px;
   }
+  @media (max-width: 700px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -86,6 +90,13 @@ export const SubscribeButton = styled.button`
   background: lightBlue;
   border-color: blue;
 `;
+export const WrapperBottomText = styled.div`
+@media (max-width: 700px) {
+ width: 60%
+
+}
+`;
+
 export const WrapperBottom = styled.div`
   background-color: black;
   margin-left: 100px;
@@ -96,10 +107,18 @@ export const WrapperBottom = styled.div`
   text-align: left;
   flex-direction:row;
   display: flex;
-  padding: 20px
+  padding: 20px;
+  @media (max-width: 700px) {
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
 `;
 export const SocialMediaButton = styled.img`
   height: 40px;
- width: 40px;
- padding: 10px
+  width: 40px;
+  padding: 10px;
+  @media (max-width: 700px) {
+    padding: 5px;
+  }
 `;

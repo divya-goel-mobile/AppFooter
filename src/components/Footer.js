@@ -14,6 +14,7 @@ import {
   EmailWrapper,
   WrapperBottom,
   SocialMediaButton,
+  WrapperBottomText,
 } from "../styles/Footer.styles";
 import LogoImg from "../assets/logo.png";
 import FacebookImg from "../assets/facebook.png";
@@ -42,9 +43,6 @@ function Footer() {
               <Title>Products</Title>
               <Link href="#">Pulse by Prudential</Link>
               <Link href="#">Health Insurance</Link>
-              <Link href="#">Life Insurance</Link>
-              <Link href="#">Wealth Accumulation</Link>
-              <Link href="#">PruPanel Connect</Link>
               <Link href="#">Promotions</Link>
               <Link href="#">International Clients</Link>
             </Column>
@@ -74,9 +72,9 @@ function Footer() {
               <Link href="#">Pursue</Link>
             </Column>
             <Column>
-              <Title>Prudential India</Title>
+              <Title>Prudential Health India</Title>
               <Link href="#">Prudential customer service centre</Link>
-              <Link href="#">5 Straits View</Link>
+              <Link href="#">Mysore Rd, Jnana Bharti</Link>
               <Link href="#">1800 3330 333</Link>
               <Link href="#">Prudential corporation Office</Link>
             </Column>
@@ -84,15 +82,15 @@ function Footer() {
         </Wrapper>
       </FooterContainer>
       <WrapperBottom>
-        <div>
+        <WrapperBottomText>
           <p style={{ color: "white", fontSize: 11 }}>
-            VHIS Provider Registration No: 00026 (effective from 28 February
+            IRDA Provider Registration No: 00026 (effective from 28 February
             2019)
           </p>
           <p style={{ color: "white", fontSize: 11 }}>
             © Copyright 2022 Prudential Singapore. All rights reserved.
           </p>
-        </div>
+        </WrapperBottomText>
         <div>
           <SocialMediaButton src={FacebookImg}></SocialMediaButton>
           <SocialMediaButton src={InstagramImg}></SocialMediaButton>
