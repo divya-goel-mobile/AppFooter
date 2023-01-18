@@ -12,7 +12,7 @@ export default function FooterStrip() {
         <div className={style.txtFooter}>
           <p>Best health plan for you and your family.</p>
           <span>
-            Starting from <span className={style.fontBig}>₹ 200/month</span>
+            Starting from <span className={style.fontBig}>₹ 500/month</span>
           </span>
         </div>
         <div class="quotesButton hideThanks">
@@ -30,6 +30,10 @@ export default function FooterStrip() {
       <div
         onClick={() => {
           setOpen(false);
+          const customEvent = new CustomEvent("message", {
+            detail: "Popup Closed",
+          });
+          window.dispatchEvent(customEvent);
         }}
         className={style.closePopup}
       >
